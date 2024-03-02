@@ -34,7 +34,6 @@ public class player : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f);
         transform.Rotate(transform.up, Input.GetAxis(verticalInput) * 0.5f);
 
-
     }
 
     

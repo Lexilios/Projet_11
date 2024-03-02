@@ -716,7 +716,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 61.63
+  m_Radius: 0.64
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &217247582
 Transform:
@@ -5980,7 +5980,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 444, y: 372, z: 170}
-  m_Center: {x: -327, y: 0, z: 29.91}
+  m_Center: {x: -361, y: 0, z: 466.5}
 --- !u!1 &2057070551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 94656424c0048864890157fa122bca59, type: 3}
