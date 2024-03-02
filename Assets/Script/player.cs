@@ -11,17 +11,20 @@ public class player : MonoBehaviour
     [SerializeField] private string verticalInput;
     private float moveHorizontal;
     Rigidbody rb;
-
+    stamina staminascript;
+    [SerializeField] private float staminaRegenRate = 0.05f;
     [SerializeField] float movementSpeed = 10f;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>(); 
+        staminascript = GetComponent<stamina>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        staminascript.updateStamina(staminaRegenRate);
         ControllPlayer();
     }
     /* transform.Rotate(transform.up, Input.GetAxis("VerticalPlayer1") * 0.5f);
@@ -35,8 +38,6 @@ public class player : MonoBehaviour
         transform.Rotate(transform.up, Input.GetAxis(verticalInput) * 0.5f);
 
     }
-
-    
 
     private void FixedUpdate()
     {
