@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scoring : MonoBehaviour
+/*public class scoring : MonoBehaviour
 {
     public BoxCollider footballgoalPlayer1Collider;
 
@@ -24,3 +24,4 @@ public class scoring : MonoBehaviour
         }
     }
 }
+*/
