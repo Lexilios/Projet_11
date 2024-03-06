@@ -15,7 +15,6 @@ public class ball : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     private void Awake()
     {
         startPosition = transform.position;
@@ -24,6 +23,15 @@ public class ball : MonoBehaviour
     public void ResetPosition()
     {
         transform.position = startPosition;
+        StartCoroutine(BallStopMoving());
+
     }
 
+    IEnumerator BallStopMoving()
+    {
+        yield return null;
+        rb.isKinematic = true;
+        yield return new WaitForSeconds(1f);
+        rb.isKinematic = false;
+    }
 }

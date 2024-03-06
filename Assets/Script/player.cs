@@ -15,7 +15,8 @@ public class player : MonoBehaviour
     [SerializeField] float movementSpeed = 10f;
     [SerializeField] float springtSpeed = 15f;
     private float moveHorizontal;
-    public Vector3 startPosition;
+    Vector3 startPosition;
+    Quaternion startRotation;
     Rigidbody rb;
     stamina staminascript;
 
@@ -54,10 +55,13 @@ public class player : MonoBehaviour
     private void Awake()
     {
         startPosition = transform.position;
+        startRotation = transform.rotation;
     }
     public void ResetPosition()
     {
         transform.position = startPosition;
+        transform.rotation = startRotation;
+
     }
 }
 

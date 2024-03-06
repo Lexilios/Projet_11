@@ -257,7 +257,7 @@ GameObject:
   - component: {fileID: 76323311}
   - component: {fileID: 76323313}
   m_Layer: 5
-  m_Name: ScorePlayer1
+  m_Name: ScorePlayer1 L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -947,7 +947,6 @@ MonoBehaviour:
   staminaRegenRate: 0.05
   movementSpeed: 30
   springtSpeed: 15
-  startPosition: {x: 0, y: 0, z: 0}
 --- !u!54 &149611686
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1103,7 +1102,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217247577}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26b07b6c1f8a38845a706f9ec07a9ea2, type: 3}
   m_Name: 
@@ -1663,8 +1662,9 @@ GameObject:
   - component: {fileID: 281642504}
   - component: {fileID: 281642506}
   - component: {fileID: 281642505}
+  - component: {fileID: 281642507}
   m_Layer: 5
-  m_Name: ScorePlayer2
+  m_Name: ScorePlayer2 L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1786,6 +1786,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281642503}
   m_CullTransparentMesh: 1
+--- !u!114 &281642507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281642503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe4d90c8b3db2e4a8ed5daefed658c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &328385979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 24162479095086888, guid: e4493a1813987bd4891de54cc37f8ed6, type: 3}
@@ -2948,7 +2960,6 @@ MonoBehaviour:
   staminaRegenRate: 0.05
   movementSpeed: 30
   springtSpeed: 15
-  startPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &584001312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3063,7 +3074,7 @@ Transform:
   m_GameObject: {fileID: 600227316}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.71, y: 0, z: -3.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3186,7 +3197,7 @@ GameObject:
   - component: {fileID: 617542569}
   - component: {fileID: 617542568}
   m_Layer: 5
-  m_Name: ScorePlayer1
+  m_Name: ScorePlayer2 R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4149,8 +4160,9 @@ GameObject:
   - component: {fileID: 718812241}
   - component: {fileID: 718812243}
   - component: {fileID: 718812242}
+  - component: {fileID: 718812244}
   m_Layer: 5
-  m_Name: ScorePlayer2
+  m_Name: ScorePlayer1 R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4272,6 +4284,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718812240}
   m_CullTransparentMesh: 1
+--- !u!114 &718812244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718812240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe4d90c8b3db2e4a8ed5daefed658c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &720622799
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,7 +4336,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720622799}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &720622802
 Camera:
   m_ObjectHideFlags: 0
@@ -7150,6 +7174,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 149611685}
+  _otherplayer: {fileID: 584001311}
+  _ball: {fileID: 217247583}
+  _scoreTableau:
+  - {fileID: 76323313}
+  - {fileID: 718812244}
+  ongoal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1442899598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e4493a1813987bd4891de54cc37f8ed6, type: 3}
@@ -7418,7 +7450,7 @@ GameObject:
   - component: {fileID: 1506095321}
   - component: {fileID: 1506095320}
   m_Layer: 5
-  m_Name: Time
+  m_Name: Time R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7725,7 +7757,7 @@ GameObject:
   - component: {fileID: 1621340155}
   - component: {fileID: 1621340154}
   m_Layer: 5
-  m_Name: Time (1)
+  m_Name: Time L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9803,6 +9835,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 584001311}
+  _otherplayer: {fileID: 149611685}
+  _ball: {fileID: 217247583}
+  _scoreTableau:
+  - {fileID: 281642507}
+  - {fileID: 617542568}
+  ongoal:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2057070551 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 94656424c0048864890157fa122bca59, type: 3}
