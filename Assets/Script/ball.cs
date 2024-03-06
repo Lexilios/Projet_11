@@ -5,16 +5,25 @@ using UnityEngine;
 public class ball : MonoBehaviour
 {
     [SerializeField] private float ballForce;
+    public Vector3 startPosition;
     Rigidbody rb;
-    // Start is called before the first frame update
+
+
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void Awake()
     {
-        
+        startPosition = transform.position;
     }
+
+    public void ResetPosition()
+    {
+        transform.position = startPosition;
+    }
+
 }
