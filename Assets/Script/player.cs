@@ -40,7 +40,7 @@ public class player : MonoBehaviour
 
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f);
-        transform.Rotate(transform.up, Input.GetAxis(verticalInput) * 0.7f);
+        transform.Rotate(transform.up, Input.GetAxis(verticalInput) * 1.7f);
     }
 
     private void FixedUpdate()
