@@ -7592,7 +7592,7 @@ MonoBehaviour:
   _player: {fileID: 0}
   _otherplayer: {fileID: 0}
   _scoreTableau: []
-  timeRemaining: 300
+  timeRemaining: 150
   timerIsRunning: 0
   timeText: {fileID: 1506095320}
 --- !u!4 &1512172996 stripped
@@ -7918,7 +7918,7 @@ MonoBehaviour:
   _player: {fileID: 0}
   _otherplayer: {fileID: 0}
   _scoreTableau: []
-  timeRemaining: 300
+  timeRemaining: 150
   timerIsRunning: 0
   timeText: {fileID: 1621340154}
 --- !u!1 &1623061331
