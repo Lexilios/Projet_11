@@ -14,10 +14,15 @@ public class retryGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+     
     }
     public void LoadGame()
     {
         SceneManager.LoadScene("Game");
+
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 }

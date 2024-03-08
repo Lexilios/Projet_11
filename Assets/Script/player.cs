@@ -45,7 +45,8 @@ public class player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.AddForce(transform.forward * moveHorizontal * movementSpeed);
+        rb.AddForce(transform.forward/1.2f * moveHorizontal * movementSpeed/1.2f);
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             movementSpeed = springtSpeed;
